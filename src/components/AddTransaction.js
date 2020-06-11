@@ -10,11 +10,13 @@ const AddTransaction = () => {
   const submitForm = (event) => {
     event.preventDefault();
     const newTransaction = {
-        id: transactions.length + 1,
-        text,
-        amount: parseInt(amount)
-    }
-    addTransaction(newTransaction)
+      id: transactions.length + 1,
+      text,
+      amount: parseInt(amount),
+    };
+    addTransaction(newTransaction);
+    setText('');
+    setAmount(0);
   };
   return (
     <Fragment>
