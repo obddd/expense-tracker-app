@@ -1,13 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Header from './components/Header';
+import Balance from './components/Balance';
+import IncomeExpenses from './components/IncomeExpenses'
+import TransactionList from './components/TransactionList'
+import AddTransaction from './components/AddTransaction'
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div>
+      <Header/>
+      <div className='container'>
+        <Balance/>
+        <IncomeExpenses/>
+        <TransactionList/>
+        <AddTransaction/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
