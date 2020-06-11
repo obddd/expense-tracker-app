@@ -5,7 +5,6 @@ import { Context } from '../context/GlobalContext';
 
 const TransactionList = () => {
   const { transactions } = useContext(Context);
-    console.log(transactions)
   return (
     <Fragment>
       <h3>History</h3>
